@@ -3,13 +3,13 @@
 # Assetchains Splitfund Script
 # (c) Decker, 2018-2019
 
-chips_cli=$HOME/chips3/src/chips-cli
+chips_cli=/home/almoche/chips3/src/chips-cli
 bitcoin_cli=bitcoin-cli
 gamecredits_cli=$HOME/GameCredits/src/gamecredits-cli
-komodo_cli=$HOME/komodo/src/komodo-cli
+komodo_cli=/home/almoche/komodo/src/komodo-cli
 
 # all you need is to insert your pubkey here in lock script format: 21{YOUR_33_BYTES_HEX_PUBKEY}AC
-NN_PUBKEY=2100deadcafedeadcafedeadcafedeadcafedeadcafedeadcafedeadcafedeadcafeac
+NN_PUBKEY=a13e38260d1eed538b690629fdc0de3b32277d42cca4a71ab892975651d92f63
 # script check the condition if utxo_count < utxo_min then append it to utxo_max,
 # small example: utxo_min = 100; utxo_max = 100; if you have 90 utxo (90 < utxo_min)
 # script will spilt additional 10 utxos to have utxo_max (100).
